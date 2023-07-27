@@ -4,6 +4,8 @@
 
 window.onload = function () {
       let data = build_spec
+      readBuildFile()
+
       initSchema(data["x-enum"])
       initTag(data["x-tags"])
       loadExample(data["x-examples"])
